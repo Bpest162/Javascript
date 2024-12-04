@@ -1,0 +1,209 @@
+.items__title
+    width: 100%
+    background: #E6E6E6
+    padding-top: 53px
+    padding-bottom: 15px
+    text-align: center
+.items__title-text
+    font-size: 15px
+    font-weight: 500
+    line-height: 150%
+    letter-spacing: 0.5px
+    margin-bottom: 14px
+.items__title-title
+    font-family: "Playfair Display"
+    font-size: 50px
+    font-weight: 700
+.items__inner
+    padding: 25px 0 25px 0
+    display: flex
+    flex-direction: column
+    gap: 20px
+.filter-form
+    display: flex
+    flex-direction: column
+    align-items: center
+.search-box
+    position: relative
+    display: inline-block
+    width: 355px
+    margin-bottom: 25px
+    
+.search-input
+    width: 100%
+    padding: 15px
+    font-size: 16px
+    font-weight: 200
+    outline: none
+    border: 1px solid rgba(0, 0, 0, 0.2)
+
+.search-btn
+    position: absolute
+    top: 50%
+    right: 20px
+    width: 18px
+    height: 18px
+    background: none
+    border: none
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateY(-50%)
+
+.search-btn::before
+    position: absolute
+    content: ''
+    width: 12px
+    height: 12px
+    border: 2px solid #000
+    border-radius: 50%
+    transform: translate(-2px, -2px)
+
+.search-btn::after
+    position: absolute
+    content: ''
+    width: 2px
+    height: 10px
+    background: #000
+    transform: translate(6px, 6px) rotate(-45deg)
+.filter-form-elements
+    padding: 0 0 30px 0
+    &__title
+        font-size: 14px
+        font-weight: 400
+        margin-bottom: 17px
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        gap: 18px
+    &__inner input
+        background: none 
+        -webkit-appearance: none
+        outline: none
+    &__item
+        width: 168px
+        border: 1px solid #FF3D00
+        border-radius: 7px
+        padding: 15px
+        font-family: "Roboto"
+        font-size: 24px
+        font-weight: 400
+        color: #FF3D00
+        text-align: center
+        cursor: pointer
+        background: none 
+.filter-form-elements__item:hover
+    background: #FF3D00
+    color: #ffffff
+.active
+    background: #FF3D00
+    color: #ffffff
+
+.range-box
+    width: 355px
+    display: flex
+    flex-direction: column
+    //align-items: center
+    gap: 25px
+    &__title
+        display: inline-block
+        font-size: 14px
+        font-weight: 400
+        margin-bottom: 25px
+.range-label
+    text-align: center
+.range
+    width: 100%
+    -webkit-appearance: none
+    outline: none
+    height: 9px
+    /* background: linear-gradient(90deg, rgb(204, 85, 32) 60%, rgb(255, 255, 255) 40%) */
+    border: 1px solid #A0A0A0
+    border-radius: 15px
+.range::-webkit-slider-thumb
+    height: 33px
+    width: 33px
+    background-color: rgb(204, 85, 32)
+    -webkit-appearance: none
+    border-radius: 50%
+    border: 1px solid #CC5520
+    cursor: pointer
+    outline: none
+.range::-moz-range-thumb
+    height: 33px
+    width: 33px
+    background-color: #CC5520
+    -webkit-appearance: none
+    border-radius: 50%
+    border: 1px solid #CC5520
+    cursor: pointer
+    outline: none
+
+.items__cards
+    display: flex
+    flex-wrap: wrap
+    gap: 33px
+.cards
+    max-width: 421px
+    max-height: 260px
+    display: flex
+    flex-direction: column
+    gap: 15px
+    &__img-wrap
+        position: relative
+        
+    &__img
+        width: 355px
+        height: 195px
+        border-radius: 10px
+    &__btn
+        position: absolute
+        top: 20px
+        right: 20px
+        width: 46px
+        height: 46px
+        color: #fff
+        border: none
+        background: #cc5520
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 11px
+        font-weight: 400
+        font-family: "Montserrat"
+        cursor: pointer
+    &__btn:hover
+        background: #fff
+        color: #cc5520
+    &__btn span
+        font-size: 33px
+        font-weight: 600
+        line-height: 0.6
+    &__desc
+        display: flex
+        justify-content: space-between
+    &__name
+        font-size: 16px
+        font-weight: 700
+    &__price
+        font-size: 16px
+        font-weight: 600
+    &__topic
+        color: #969595
+        font-size: 16px
+        font-weight: 400
+    &__rating
+        display: flex
+        flex-direction: row
+        cursor: pointer
+    &__rating-item
+        color: #969595
+    &__rating-item.rating-active
+        color: #cc5520
+.btn-wrap
+    display: inline-block
+    width: 100%
+    text-align: center
+    padding: 40px 0 40px 0

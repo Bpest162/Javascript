@@ -1,0 +1,62 @@
+
+.gender-box
+    display: grid
+    grid-template-columns: 1fr 1fr 
+    grid-template-rows: 1fr
+
+
+.checkbox
+    justify-self: end
+    -webkit-appearance: none
+    appearance: none
+    width: 3.8rem
+    height: 3.8rem
+    border: .1rem solid #B8B6BF
+    border-radius: 20px
+    cursor: pointer
+    display: grid
+    place-content: center   
+    
+    
+.checkbox
+    &::before 
+        content: ""
+        width: 3rem
+        height: 3rem
+        border-radius: 50%
+        background-color: #EA5E32
+        border: .3rem solid #FFCBBA
+        box-shadow: 0 0 4px 4px #FFCBBA
+        transform: scale(0)
+        transition: 120ms transform ease-in-out
+.checkbox:checked
+    &::before 
+        transform: scale(1)
+
+
+.radiobox
+    justify-self: end
+    -webkit-appearance: none
+    appearance: none
+    width: 3.8rem
+    height: 3.8rem
+    border: .1rem solid #B8B6BF
+    border-radius: 20px
+    cursor: pointer
+    display: grid
+    place-content: center  
+
+.radiobox
+    &::before
+        content: ""
+        width: 3rem
+        height: 3rem
+        border-radius: 50%
+        background-color: #EA5E32
+        border: .3rem solid #FFCBBA
+        box-shadow: 0 0 4px 4px #FFCBBA
+        transform: scale(0)
+        transition: 120ms transform ease-in-out
+.radiobox:checked
+    &::before 
+        transform: scale(1)

@@ -1,0 +1,51 @@
+.sliderbox
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 
+    grid-template-areas:"area value" "range range"
+    gap: 4rem
+
+.form__title_area
+    grid-area: area
+    align-self: center
+    
+.range
+    -webkit-appearance: none
+    outline: none
+    height: .2rem
+    width: 100%
+    background-color: #B8B6BF
+    border-radius: 1.5rem
+    grid-area: range
+
+.range::-webkit-slider-thumb
+    height: 2.5rem
+    width: 2.5rem
+    background-color: $color-white
+    -webkit-appearance: none
+    border-radius: 50%
+    border: .1rem solid #b8b6bf
+    cursor: pointer
+    outline: none
+.range::-moz-range-thumb
+    height: 2.5rem
+    width: 2.5rem
+    background-color: $color-white
+    -webkit-appearance: none
+    border-radius: 50%
+    border: .1rem solid #B8B6BF
+    cursor: pointer
+    outline: none
+
+.value
+    width: 9.4rem
+    height: 4.2rem
+    font-size: 1.7rem
+    font-weight: 400
+    background-color: $form-title-color
+    padding-top: 1.2rem
+    text-align: center
+    border-radius: 1rem
+    color: $color-white
+    justify-self: end
+    grid-area: value

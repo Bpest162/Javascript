@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    letter-spacing: .3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    row-gap: 46px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.header-logo {
+    padding: 52px 0 14px 0;
+    display: inline-block;
+    border-bottom: 1px solid #AEAEAE;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    list-style: none;
+}
+.logo span {
+    color: #ffffff;
+    background-color: #FF3D00;
+    line-height: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 17px;
+}
+
+.list__item {
+    background-color: #fff;
+    color: #FF3D00;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 11px 10px;
+    border: 1px solid #FF3D00;
+    border-radius: 7px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list__item:hover {
+    background-color: #ff3d00;
+    color: #ffffff;
+}
+.Fennec, .Arctic {
+    width: 155px;
+}
+.Kit {
+    width: 113px;
+}
+.Red {
+    width: 197px;
+}
+.Pet {
+    width: 327px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 37px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.card {
+    max-width: 611px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 18px;
+}
+.card-img {
+    width: 100%;
+    height: 160px;
+
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
+.card-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #AEAEAE;
+    padding-bottom: 7px;
+}
+.card-title h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+.like-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.like {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FF3D00;
+}
+.text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 145.8%;
+}
+.card-desc a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF3D00;
+    padding-top: 8px;
+}
+
+@media  (min-width: 768px) {
+    .card-img {
+        width: 237px;
+    }
+    .card-desc {
+        max-width: 356px;
+    }
+    .Pet, .Red {
+        width: 155px;
+    }
+
+}
+

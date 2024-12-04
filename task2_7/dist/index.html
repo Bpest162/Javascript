@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>to do list app</title>
+</head>
+<body>
+    <div class="container">
+            <header class="header">
+                <h1 class="title">Where in the world?</h1>
+                <button class="toggle" for="checkbox" type="button">
+                    <span id="span" class="checkbox-inner "><img src="img/sunny.png" alt=""></span>
+                </button>
+            </header>
+            <form class="search-form" action="#" >
+                <div class="src-box">
+                    <input class="src-input" type="text" name="src-input" placeholder="Search for a country....">
+                    <button class="search-btn" type="submit" id="search-btn"></button>
+                </div>
+                
+                <div class="drop-down-menu">
+                    <span class="drop-down-text">Region</span> <span class="arrow "></span>
+                    <ul class="nav-menu " id="menu">
+                        <li class="nav-menu__item">Asia</li>
+                        <li class="nav-menu__item">Europe</li>
+                        <li class="nav-menu__item">America</li>
+                        <li class="nav-menu__item">Africa</li>
+                        <li class="nav-menu__item">Oceania</li>
+                    </ul>
+                </div>
+            </form>
+
+            <div class="counties">
+                
+            </div>
+    </div>
+    
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3E9FvKiWwIn1xi9NTZRPs0ATMoR9ImwE&libraries=places&callback=initialize">
+    </script>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+</html>

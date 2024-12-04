@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>to do list app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-wrap">
+            <h1 class="title">foxmin<span class="ed">ed</span></h1>
+        </div>
+        <form  class="form" name="Form">
+            <input type="text" class="input" id="todo" name="input" placeholder="..." onkeydown="if(event.keyCode==13){return false;}">
+            <button class="btn-save" id="btn-save" type="submit">Save</button>
+            <button class="btn-edit" id="btn-edit" type="submit">Edit</button>
+        </form>
+        <div class="items-wrap" id="items-wrap">
+            <ul class="todoItems" id="todoItems"></ul>
+        </div>
+        <button class="iscleaner" id="iscleaner">
+            <svg class="trash" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.27891 7L8.56953 22.8977C8.56953 23.7836 9.28594 24.5 10.1719 24.5H17.8828C18.7688 24.5 19.4852 23.7836 19.4852 22.8977L20.7594 7H7.27891ZM10.6477 21.4922L10.2812 8.75H11.293L11.6703 21.4922H10.6477ZM14.4922 21.4922H13.5078V8.75H14.4922V21.4922ZM17.3523 21.4922H16.3352L16.707 8.75H17.7188L17.3523 21.4922ZM19.9062 5.03125H17.9375L16.4992 3.77344C16.2969 3.59844 16.0398 3.5 15.7773 3.5H12.2336C11.9656 3.5 11.7031 3.59844 11.5008 3.77344L10.0625 5.03125H8.09375C7.13125 5.03125 6.45312 5.49063 6.45312 6.45312H21.5469C21.5469 5.49063 20.8687 5.03125 19.9062 5.03125Z" fill="#989898"/>
+            </svg>
+            Clean items
+        </button>
+    </div>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+</html>

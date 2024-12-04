@@ -1,0 +1,66 @@
+{
+    "products": [
+        {
+            "name": "Products name1",
+            "id": "p01",
+            "image": "../server/goods-img/fox-card.png",
+            "price": 225,
+            "topic": "Forest" 
+        },
+        {
+            "name": "Products name2",
+            "id": "p02",
+            "image": "../server/goods-img/fox-card1.png",
+            "price": 120,
+            "topic": "Other" 
+        },
+        {
+            "name": "Products name3",
+            "id": "p03",
+            "image": "../server/goods-img/fox-card2.png",
+            "price": 300,
+            "topic": "Fox kids" 
+        },
+        {
+            "name": "Products name4",
+            "id": "p04",
+            "image": "../server/goods-img/fox-card3.png",
+            "price": 100,
+            "topic": "Forest" 
+        },
+        {
+            "name": "Products name5",
+            "id": "p05",
+            "image": "../server/goods-img/fox-card4.png",
+            "price": 180,
+            "topic": "Forest" 
+        },
+        {
+            "name": "Products name6",
+            "id": "p06",
+            "image": "../server/goods-img/fox-card5.png",
+            "price": 410,
+            "topic": "Other" 
+        },
+        {
+            "name": "Products name7",
+            "id": "p07",
+            "image": "../server/goods-img/fox-card6.png",
+            "price": 500,
+            "topic": "Forest" 
+        },
+        {
+            "name": "Products name8",
+            "id": "p08",
+            "image": "../server/goods-img/fox-card7.png",
+            "price": 98,
+            "topic": "Fox kids" 
+        }
+    ]
+}
+    
+
+
+
+
+

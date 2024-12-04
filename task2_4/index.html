@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">Create Account</h1>
+            <img class="header__img" src="img/Group 1187.png" alt="">
+        </header>
+
+        <main class="container">
+            <form id="form" class="form" action="#" >
+
+                <div class="form__box form__box_fname">
+                    <label for="firstname" class="form__title">First name*</label>
+                    <input id="firstname" class="form__item" tabindex="1" name="firstname" type="text"  placeholder="Enter your first name">
+                    <span class="errorMessage" data-error-message-for="firstname"></span>
+
+                </div>
+
+                <div class="form__box form__box_lname">
+                    <label for="lastname" class="form__title">Last name*</label>
+                    <input id="lastname" class="form__item" tabindex="2" name="lastname" type="text"  placeholder="Enter your last name">
+                    <span class="errorMessage" data-error-message-for="lastname"></span>
+                </div>
+
+                <div class="form__box form__box_email">
+                    <label for="email" class="form__title">Email*</label>
+                    <input id="email" class="form__item" autocomplete="on" tabindex="3" name="email" type="email"  placeholder="Enter your email">
+                    <span class="errorMessage" data-error-message-for="email"></span>
+                </div>
+               
+                
+                
+                <div class="form__box form__box_password">
+                    <label for="password"  class="form__title">Password*</label>
+                    <input id="password" class="form__item" autocomplete="new-password" tabindex="4" name="password" type="password"  placeholder="Enter your password">
+                    <span class="errorMessage" data-error-message-for="password"></span>
+                </div>
+
+                <div class="form__box form__box_con-password">
+                    <label for="confirm-password" class="form__title">Confirm Password*</label>
+                    <input id="conPassword" class="form__item" autocomplete="new-password" tabindex="5" name="conPassword" type="password"  placeholder="Enter your confirm password">
+                    <span class="errorMessage" data-error-message-for="conPassword"></span>
+                </div>
+                
+                
+                    
+                        
+                <fieldset class="gender-box">
+                    <legend class="form__title">Gender:</legend>
+
+                    <label class="checkbox-label" for="radiobox1">
+                        <input class="radiobox" type="radio" tabindex="7" name="Hobbies" checked id="radiobox1"> Female
+                    </label>
+                            
+                    
+                            
+                    <label class="checkbox-label" for="radiobox">
+                        <input class="radiobox" type="radio" tabindex="7" name="Hobbies" checked id="radiobox"> Male
+                    </label>
+                            
+                </fieldset>
+                    
+                <fieldset class="hobbies-box">
+                    <legend class="form__title">Hobbies:</legend>
+
+                    <label class="checkbox-label" for="checkbox">
+                        <input class="checkbox" type="checkbox" tabindex="7" name="Hobbies" checked id="checkbox"> Music
+                    </label>
+
+                    <label class="checkbox-label" for="checkbox1">
+                        <input class="checkbox" type="checkbox" tabindex="8" name="Hobbies" checked id="checkbox1"> Sports
+                    </label>
+                            
+                    <label class="checkbox-label" for="checkbox2">
+                        <input class="checkbox" type="checkbox" tabindex="9" name="Hobbies" id="checkbox2"> Travel
+                    </label>
+                            
+                    <label class="checkbox-label" for="checkbox3">
+                        <input class="checkbox" type="checkbox" tabindex="10" name="Hobbies" id="checkbox3"> Movies
+                    </label>
+                            
+                </fieldset>
+                    
+                
+                <div class="form__box form__box_income">
+                    <legend class="form__title">Source of Income</legend>
+
+                    <select class="form__item form__item_income" name="" tabindex="11">
+                        <option value="not selected">not selected</option>
+                        <option value="Employed">Employed</option>
+                        <option value="pensioner">Pensioner</option>
+                        <option value="grants">Grants</option>
+                    </select>
+                </div>
+
+                <div class="sliderbox">
+                    <p class="form__title form__title_area">Income</p>
+                    <div class="value" id="value">0</div>
+                    <input class="range" type="range" min="5" max="50" value="0" id="myRange" tabindex="12">
+                    
+                </div>
+                    
+                <div class="form__box form__box_upld-profile">
+                    <p class="form__title">Upload Profile Picture</p>
+                    <div class="file-box">
+                        <input class="btn-file" type="file" name="Profile Picture" id="uploudBtn">
+                        <label class="btn-uploud" for="uploudBtn" tabindex="13">Choose file</label>
+                        <p class="btn-file__title">No file chosen</p>
+                    </div>
+                </div>
+
+                <div class="form__box form__box_age">
+                    <label class="form__title">Age</label>
+                    <input class="form__item" type="number" name="age" tabindex="14" min="16" max="120" step="1" placeholder="Age">
+                </div>
+                
+
+                <div class="form__box form__box_bio">
+                    <label class="form__title">Bio</label>
+                    <textarea class="form__item form__item_bio" placeholder="...." tabindex="15"></textarea>
+                </div>
+
+                <div class="button">
+                    <button id="button" class="form__btn" type="submit" tabindex="16">Create</button>
+                </div>
+                
+
+            </form>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

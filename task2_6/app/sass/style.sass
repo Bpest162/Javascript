@@ -1,0 +1,235 @@
+@import "resets.scss"
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+body 
+    font-family: 'Roboto'
+    display: flex
+    min-height: 100vh
+    align-items: center
+    justify-content: center
+    background-color: #1e1e1e
+
+.container
+    width: 1006px
+    display: flex
+    background: #fff
+    flex-direction: column
+    align-items: center
+    padding: 0 102px 76px 102px
+    border-radius: 10px
+
+.title-wrap
+    display: inline-block
+    padding: 78px 0 78px 0
+
+.title
+    font-size: 38px
+    color: #ababab
+    font-weight: 700
+    letter-spacing: 1.2px
+
+.title span
+    color: #fff
+    background: #ff3d00
+    display: inline-block
+
+.form
+    width: 100%
+    position: relative
+    margin-bottom: 22px
+
+.input
+    width: 100%
+    outline: none
+    padding: 15px 267px 15px 30px
+    font-size: 24px
+    border: none
+    background: #F0F5F8
+    border-radius: 62px
+    border: 1px solid #d2d2d2
+
+.btn-save
+    display: inline-block
+    position: absolute
+    width: 257px
+    height: 100%
+    border-radius: 62px
+    right: 0
+    border: none
+    background: #00C45A
+    color: #fff
+    font-size: 24px
+    letter-spacing: 0.5px
+    cursor: pointer
+
+.btn-edit
+    display: none
+    position: absolute
+    width: 257px
+    height: 100%
+    border-radius: 62px
+    top: 0
+    right: 0
+    border: none
+    background: #FF3D00
+    color: #fff
+    font-size: 24px
+    letter-spacing: 0.5px
+    cursor: pointer
+
+.items-wrap
+    width: 100%
+    display: flex
+    flex-direction: column
+
+
+.item
+    position: relative
+    width: 100%
+    background: #F0F5F8
+    padding: 20px 35px 20px 30px
+    border-radius: 62px
+    margin-bottom: 9px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.item:last-child 
+    margin-bottom: 0
+
+.item-vel
+    width: 77%
+    font-size: 24px
+    font-weight: 700
+    cursor: pointer
+
+.safe
+    width: 62px
+    height: 62px
+    border: none
+    background-color: #FF3D00
+    color: #fff
+    border-radius: 10px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    row-gap: 8px
+    font-size: 11px
+    font-weight: 300
+    cursor: pointer
+
+.safe span
+    width: 22px
+    height: 22px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+
+.safe span::before
+    position: absolute
+    content: ''
+    width: 4px
+    height: 13px
+    border-right: 2px solid #fff
+    border-bottom: 2px solid #fff
+    transform: rotate(45deg)
+
+.safe span::after
+    position: absolute
+    content: ''
+    width: 22px
+    height: 22px
+    border: 2px solid #fff
+    border-radius: 4px
+
+
+
+.btn-del
+    border: none
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    row-gap: 8px
+    font-size: 11px
+    font-weight: 300
+    cursor: pointer
+    background: none
+    color: #949494
+
+.btn-del span
+    width: 22.75px
+    height: 22.75px
+    cursor: pointer
+    border-radius: 50%
+    position: relative
+    background: #949494
+
+.btn-del:hover
+    color: #FF3D00
+
+.btn-del span:hover
+    background: #FF3D00
+
+.del
+    position: absolute
+    top: 50%
+    right: 5%
+    width: 11px
+    height: 11px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateY(-50%)
+
+.del::before
+    position: absolute
+    content: ''
+    width: 1px
+    height: 11px
+    background: #ffffff
+    transform: rotate(45deg)
+
+.del::after
+    position: absolute
+    content: ''
+    width: 1px
+    height: 11px
+    background: #ffffff
+    transform: rotate(-45deg)
+
+.iscleaner
+    margin-top: 40px
+    align-self: center
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #989898
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+    text-transform: uppercase
+    border: none
+    background: none
+    
+
+.iscleaner:hover
+    color: #FF0000
+
+.trash
+    cursor: pointer
+    margin-bottom: 10px
+
+svg path:hover
+    fill: #FF0000

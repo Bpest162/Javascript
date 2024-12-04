@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather widget</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-title">
+            <h1 class="title">foxmin<span class="ed">ed</span></h1>
+        </div>
+        
+        <form class="search-box">
+            <input class="search-txt" id="mySearch" type="text" placeholder="Search ..." autocomplete="on">
+            <span class="" id="isCleaner"></span>
+            <p class="city-name" id="selection"></p>
+        </form>
+        <main class="" id="main-display">
+            <div class="weather-display">
+                <div class="temp">
+                    <h4 class="min-temp" id="fill-temp"></h4>
+                    <div class="max-temp-block">
+                        <div class="max-term" id="main-desc"></div>
+                        <h4 class="max-temp" id="max-temp"></h4>
+                    </div>
+                </div>
+                <div class="block-term-cityname">
+                    <div class="min-term" id="main-desc2"></div>
+                    <p class="city-name-re" id="city-name-re"></p>
+                </div>
+                <div class="icon-block">
+                    <img class="weather-icon" id="weather-icon" src="" alt="">
+                </div>
+            </div>
+        </main>
+        
+        <div class="five-day-forecast">
+            <ul class="forecast">
+                
+            </ul>
+           
+        </div>
+    </div>
+
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR7-GOV8fyOgPwbbdGH9HGFiBxInWIzA4&libraries=places&callback=initialize">
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>
